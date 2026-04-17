@@ -1,0 +1,14 @@
+/* Root Variables for Easy Customization */
+:root {
+    --primary-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    --secondary-gradient: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    --accent-gradient: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+    --light-bg: rgba(30, 41, 59, 0.6);
+    --dark-text: #f8fafc;
+    --light-text: #e2e8f0;
+    --shadow-light: 0 10px 30px rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 15px 35px rgba(0, 0, 0, 0.4);
+    --shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.5);
+    --border-radius: 16px;
+    --transition-speed: 0.3s;
+}

@@ -1,0 +1,84 @@
+/* Base Styles & Global Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    color: var(--light-text);
+    background: var(--primary-gradient);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Typography elements */
+h1 {
+    font-size: 3rem;
+    margin: 25px 0 15px;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    display: inline-block;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-gradient);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-gradient);
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    .section {
+        box-shadow: none !important;
+        background: white !important;
+        border: 1px solid #ddd !important;
+    }
+
+    header, .contact-links, .social-icons, .animate-on-scroll {
+        animation: none !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .skill-tag, .tech-badge {
+        background: #f0f0f0 !important;
+        color: #333 !important;
+    }
+}
